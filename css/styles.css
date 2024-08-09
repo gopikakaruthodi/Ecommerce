@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+  background-color: rgb(10, 32, 70);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+.search{
+  position: absolute;
+  top: 15px;
+  left:70%;
+  width: 30%;
+
+}
+#search{
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  margin-right: 25px;
+  width: 70%;
+}
+
+.eight{
+   width: 100%;
+   height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0px 30px;  */
+    padding-top: 2%;
+    /* border: 1px solid greenyellow; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+ 
+ .e-card{
+   /* border: 1px solid grey; */
+   padding: 15px;
+   margin: 8px;
+   /* text-align: center; */
+   box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+   width: 260px;
+   height: 430px;
+   
+
+ }
+  .e-card img{
+    
+    width: 16em;
+    height: 16em;
+    /* padding-right: 5px; */
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    
+    
+ 
+    
+ }
+ .e-doc{
+  padding: 10px;
+ }
+ .e-doc h6{
+ 
+
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    }
+    .e-doc h4{
+    color:black;
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+
+    }
+ 
+    
+  
+
+    .btn{
+      background-color:rgb(172, 30, 26);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 7px;
+     
+
+    }
+
+    .product{
+      width: 100%;
+      height: 80vh;
+      /* background-color: rgb(241, 239, 238); */
+      position: relative;
+
+    }
+.pro-cards{
+   position: absolute;
+   top: 2%;
+   left: 1%;
+}
+    .pro-card{
+      width: 4rem;
+      height: 4rem;
+      /* border: 2px solid red; */
+      margin: 10px;
+      box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+
+    }
+
+    .pro-card img{
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+    }
+
+    .pro-pic{
+      width: 23rem;
+      height: 28rem;
+      position: absolute;
+      top: 3%;
+      left: 9%;
+      box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 16px ;
+
+    }
+    .pro-pic img{
+      width: 20rem;
+      height: 20rem;
+      margin: 50px 20px;
+    }
+
+    .pro-content{
+      position: absolute;
+      top: 4%;
+      left: 40%;
+    }
+    .pro-btn{
+      border: none;
+      background-color: rgb(20, 184, 20);
+      color: white;
+      padding: 3px 12px;
+      border-radius: 13px;
+    }
+    
+    .last-btn{
+      /* align-items: center; */
+    }
+    .last-btn1{
+      border: none;
+      background-color: orange;
+      padding: 10px 40px;
+      margin-left: 35px;
+      border-radius: 6px;
+     
+     
+    }
+    .last-btn2{
+      border: none;
+      background-color: rgb(232, 143, 87);
+      padding: 10px 40px;
+      margin-left: 35px;
+      border-radius: 6px;
+     
+     
+    }
+
+    .e-doc h6{
+      color: rgb(128, 125, 125);
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .math{
+      color: rgb(135, 133, 133);
+      text-decoration: line-through;
+    }
+    .price{
+      color: black;
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 18px;
+    }
+
+    .discnt{
+      color: rgb(18, 120, 18);
+      margin-left: 15px;
+      font-weight: bold;
+
+    }
+    .prices{
+      margin-bottom: 15px;
+
+    }
+
+    .icon{
+      font-size: 10px;
+      text-align: center;
+    
+    }
+    .pro-btn1{
+      border: none;
+      background-color: rgb(29, 145, 29);
+      color: white;
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
