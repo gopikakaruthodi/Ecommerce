@@ -26,6 +26,34 @@ async function  fetchProduct(){
 
     document.getElementById("card").innerHTML=str
 
+    document.getElementById("category").textContent=`${product.category.toUpperCase()}`
+    document.getElementById("name").textContent=`${product.title}`
+    document.getElementById("description").textContent=`${product.description}`
+    document.getElementById("price-details").innerHTML=` <span id="disc-price" style="font-weight: bold;font-size: 25px;">$${product.price}</span>
+            <span id="org-price" style="text-decoration: line-through;color: gray;">$${Math.ceil(product.price*100/product.discountPercentage)}</span>
+            <span id="discount" style="color: rgb(35, 162, 35); letter-spacing: 2px;">${product.discountPercentage}%Off</span>`
+
+    document.getElementById("ratings").innerHTML=` <span><button class="pro-btn">${product.rating} <span><i class="fa-solid fa-star"></i></span></button></span>
+            <span style="color: rgb(140, 138, 138);margin-left: 10px;font-weight: 560;">${product.rating} Ratings and ${product.reviews.length} Reviews</span>`
+
+
+    document.getElementById("details").innerHTML=`
+                                        <p style="margin-bottom:10px;"><b>Warranty Information: </b>${product.warrantyInformation}</p>
+                                        <p style="margin-bottom:10px;"><b>Shipping Information: </b>${product.shippingInformation}</p>`
+
+                                        // document.getElementById("disc-price").textContent=`$${product.price}`
+                                        // document.getElementById("org-price").textContent=`$${Math.ceil(product.price*100/product.discountPercentage)}`
+                                        // document.getElementById("rating").textContent=`${product.rating}`
+    // document.getElementById("discount-percentage").textContent=`${product.discountPercentage}%OFF`
+    
+
+
+
+
+
+  
+
+
 
 }
 

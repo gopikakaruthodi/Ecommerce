@@ -102,11 +102,13 @@
       width: 100%;
       height: 80vh;
       /* background-color: rgb(241, 239, 238); */
-      position: relative;
+       margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
 
     }
 .pro-cards{
-   position: absolute;
+   /* position: absolute; */
    top: 2%;
    left: 1%;
 }
@@ -127,8 +129,8 @@
 
     .pro-pic{
       width: 23rem;
-      height: 28rem;
-      position: absolute;
+      height: 32rem;
+      /* position: absolute; */
       top: 3%;
       left: 9%;
       box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 16px ;
@@ -137,13 +139,15 @@
     .pro-pic img{
       width: 20rem;
       height: 20rem;
-      margin: 50px 20px;
+      margin: 70px 20px;
     }
 
     .pro-content{
-      position: absolute;
+      /* position: absolute;
       top: 4%;
-      left: 40%;
+      left: 40%; */
+      width: 40%;
+      margin-left: 80px;
     }
     .pro-btn{
       border: none;
@@ -217,6 +221,11 @@
     }
 
     .child11{
+      color: white;
+      
+    }
+
+    .nav-head{
       color: white;
       
     }
