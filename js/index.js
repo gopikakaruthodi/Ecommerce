@@ -5,7 +5,7 @@ async function getProducts(){
     // console.log(data); 
       str=``
     data.products.map((item)=>{
-        str+=`<div class="e-card">
+        str+=`<a class="a-tag" href="./pages/product.html?id=${item.id}"><div class="e-card">
                 <div class="e-img">
                     <img src="${item.thumbnail}" alt="">
                 </div>
@@ -14,10 +14,9 @@ async function getProducts(){
                     <h4>${item.title.length>=20?`${item.title.substring(0,20)}...`:item.title}</h4>
                     <div style="margin-bottom: 8px;"><span><button class="pro-btn1">${item.rating}<span class="icon"><i class="fa-solid fa-star"></i></span></button></span></div>
                     <div class="prices"><span class="price" style="margin-top: 10px;">$${item.price} </span><span class="math">$${Math.ceil((item.price*100/item.discountPercentage))}</span><span class="discnt">${item.discountPercentage}% Off</span>\</div>
-                    <div><a href="./pages/product.html?id=${item.id}"><button class="btn">View More</button></a></div>
                 </div>
                 
-            </div>`
+            </div></a>`
 
     })
     document.getElementById("products").innerHTML=str
@@ -47,7 +46,7 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
         // console.log(data); 
           str=``
         asd.map((item)=>{
-            str+=`<div class="e-card">
+            str+=`<a class="a-tag" href="./pages/product.html?id=${item.id}"><div class="e-card">
                 <div class="e-img">
                     <img src="${item.thumbnail}" alt="">
                 </div>
@@ -56,9 +55,9 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
                     <h4>${item.title.length>=20?`${item.title.substring(0,20)}...`:item.title}</h4>
                     <div style="margin-bottom: 8px;"><span><button class="pro-btn1">${item.rating}<span class="icon"><i class="fa-solid fa-star"></i></span></button></span></div>
                     <div class="prices"><span class="price" style="margin-top: 10px;">$${item.price} </span><span class="math">$${Math.ceil((item.price*100/item.discountPercentage))}</span><span class="discnt">${item.discountPercentage}% Off</span>\</div>
-                    <div><a href="./pages/product.html?id=${item.id}"><button class="btn">View More</button></a></div>
                 
-            </div>`
+            </div>
+            </div></a>`
     
         })
         document.getElementById("products").innerHTML=str
