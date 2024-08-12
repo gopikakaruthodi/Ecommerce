@@ -1,7 +1,8 @@
-const lkey=Object.keys(localStorage);
-console.log(lkey);
 
 function displayCartProducts() {
+    const lkey=Object.keys(localStorage);
+    console.log(lkey);
+
 
   str=``
   lkey.map((item)=>{
