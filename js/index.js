@@ -70,3 +70,16 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
        }
 
 })
+
+
+function checkEmpty(){
+    if(localStorage.length==0){
+        window.location.href="../pages/emptyCart.html"
+    }
+    else{
+        window.location.href="../pages/cart.html"
+
+    }
+}
+
+

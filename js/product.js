@@ -41,12 +41,7 @@ async function  fetchProduct(){
                                         <p style="margin-bottom:10px;"><b>Warranty Information: </b>${product.warrantyInformation}</p>
                                         <p style="margin-bottom:10px;"><b>Shipping Information: </b>${product.shippingInformation}</p>`
 
-                                        // document.getElementById("disc-price").textContent=`$${product.price}`
-                                        // document.getElementById("org-price").textContent=`$${Math.ceil(product.price*100/product.discountPercentage)}`
-                                        // document.getElementById("rating").textContent=`${product.rating}`
-    // document.getElementById("discount-percentage").textContent=`${product.discountPercentage}%OFF`
-    
-
+                                      
 
 
 

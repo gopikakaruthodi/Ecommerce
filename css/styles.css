@@ -10,8 +10,36 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  height: 30px;
 
 }
+/* 
+.head-img{
+  width: 50px;
+  height: 50px;
+} */
+ .nav-items{
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  display: flex;
+ }
+ .nav-items p{
+  margin: 0 15px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+
+
+ }
+ .nav-items :hover{
+  color: rgb(190, 171, 51);
+  text-decoration: underline;
+  text-decoration-color:rgb(153, 137, 32);
+  text-underline-offset: 10px;
+  
+ }
+
+ 
 .search{
   position: absolute;
   top: 15px;
@@ -19,10 +47,17 @@
   width: 30%;
 
 }
+.search1{
+  position: absolute;
+  top: 15px;
+  left:94%;
+  /* width: 30%; */
+
+}
 #search{
   padding: 5px;
   border: none;
-  border-radius: 2px;
+  border-radius: 12px;
   margin-right: 25px;
   width: 70%;
 }
@@ -44,22 +79,29 @@
  .e-card{
    /* border: 1px solid grey; */
    padding: 15px;
-   margin: 8px;
-   /* text-align: center; */
    box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
-   width: 260px;
-   height: 380px;
+   width: 250px;
+   height: 320px;
+   border-radius: 5px;
+   margin: 15px;
    
 
  }
+ .e-card:hover{
+  width: 249px;
+  height: 319px;
+
+  box-shadow: .5px .5px 7px rgb(204, 207, 213);
+}
   .e-card img{
     
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
     /* padding-right: 5px; */
     background-position: center;
     object-fit: cover;
     background-size: cover;
+    margin-left: 20px;
     
     
  
@@ -105,6 +147,7 @@
        margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
+      /* justify-content: space-around; */
 
     }
 .pro-cards{
@@ -113,6 +156,9 @@
    left: 1%; */
    margin-left: 30px;
     margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+   
 }
 
     .pro-card{
@@ -132,12 +178,13 @@
     }
 
     .pro-pic{
-      width: 23rem;
+      width: 36em;
       height: 32rem;
       /* position: absolute; */
       /* top: 3%;
       left: 9%; */
       box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 16px ;
+      text-align: center;
 
     }
     .pro-pic img{
@@ -232,9 +279,28 @@
 
     .nav-head{
       color: white;
+      text-decoration: none;
       
     }
 
     .a-tag{
       text-decoration: none;
     }
+
+    .head-img{
+     width: 100px;
+      color: white;
+    }
+
+    #products1{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      /* align-items: center; */
+      justify-content: center;
+    
+    }
+
+   
+    
+
