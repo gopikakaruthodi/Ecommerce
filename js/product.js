@@ -44,7 +44,15 @@ async function  fetchProduct(){
                                       
 
 
+if(localStorage.getItem(id)){
+    document.getElementById("cart-btn").innerHTML=`<button onclick="goToCart()"  class="last-btn1">GO TO CART</button>`
 
+}
+else{
+    document.getElementById("cart-btn").innerHTML=`<button onclick="addToCart()"  class="last-btn1">ADD TO CART</button>`
+
+
+}
 
   
 
@@ -64,5 +72,9 @@ fetchProduct()
 
 async function addToCart(){
     localStorage.setItem(product.id,JSON.stringify(product))
+    window.location.href='../pages/cart.html'
+}
+
+function goToCart(){
     window.location.href='../pages/cart.html'
 }
