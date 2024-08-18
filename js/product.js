@@ -70,6 +70,11 @@ function changeImg(img){
 fetchProduct()
 
 
+
+let items = localStorage.length
+console.log(items);
+document.getElementById("no-Item").innerHTML=items
+
 async function addToCart(){
     localStorage.setItem(product.id,JSON.stringify(product))
     window.location.href='../pages/cart.html'
@@ -77,4 +82,14 @@ async function addToCart(){
 
 function goToCart(){
     window.location.href='../pages/cart.html'
+}
+
+function checkEmpty(){
+    if(localStorage.length==0){
+        window.location.href="./emptyCart.html"
+    }
+    else{
+        window.location.href="./cart.html"
+
+    }
 }

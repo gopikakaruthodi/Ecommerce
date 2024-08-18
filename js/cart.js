@@ -45,67 +45,46 @@ str=``
 
   displayCartProducts()
 
+
+
   function removeItem(id){
     localStorage.removeItem(id)
 
-    displayCartProducts()
     priceDetails()
+    displayCartProducts()
    
 
   }
 
   
-
-
-// let count=1
-// const valueDisplay = document.getElementById("total-item")
-// console.log(valueDisplay);
-
-
-  
-//   function increment(){   
-//     count++;
-//     // console.log(count);
-//     valueDisplay.innerText=count
-//     console.log(count);
-    
-
-    
-//   }
- 
-  
-//   function decrement(){   
-//     count--;
-//     // console.log(count);
-//     valueDisplay.innerText=count
-
-    
-//   }
-let totalPrice=0
-let price=0
-let discount=0
   function priceDetails(){
+    let originalPrice=0
+    let discount =0
+    let discountPrice=0
    for(i=0;i<localStorage.length;++i){
     const key =localStorage.key(i)
     const product=JSON.parse(localStorage.getItem(key))
-    price=price+(Math.ceil((product.price*100/product.discountPercentage)))
-    totalPrice=totalPrice+product.price
-    discount=price-totalPrice
+    originalPrice=originalPrice + Math.ceil((product.price*100/product.discountPercentage))
+    // console.log(originalPrice);
     
+    discount=Math.ceil(discount+(originalPrice-product.price))
+    // console.log(discount);
+    
+    discountPrice=Math.ceil(discountPrice+product.price)
 
-    
-    
+  
    }
+    
  
   //  console.log(price);
-   document.getElementById("cart1").textContent=`$${price}`
+   document.getElementById("cart1").textContent=`$${originalPrice}`
   //  console.log(discount);
-   document.getElementById("cart2").textContent=`- $${discount}`
+   document.getElementById("cart2").textContent=`-$${discount}`
     //  console.log(totalaPrice);
-   document.getElementById("cart4").textContent=`$${totalPrice}`
+   document.getElementById("cart4").textContent=`$${discountPrice}`
+   document.getElementById("save").innerHTML=`<p class="save">You will save $${discount} on this order</p>`
 
     
   }
-
   priceDetails()
- 
+

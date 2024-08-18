@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
-    <div class="heading">
-        <a class="nav-head" href="../index.html">        
-            <img class="head-img" src="../images/eunoia-high-resolution-logo-transparent (1).png" alt="">
-        </a>
-        <div class="nav-items">
-            
-            <a class="a-tag" href="../index.html"><p>Home</p></a>
-            <a class="a-tag" href="../pages/beauty.html"> <p>Beauty</p></a>
-            <a class="a-tag" href="../pages/groceries.html"><p>Grocery</p></a>
-            <a class="a-tag" href="../pages/furniture.html"><p>Furniture</p></a>
-           
-            
-            
-        </div>  
-        <div class="search">
-            <a href="../pages/cart.html"><span class="child1"><i class="fa-solid fa-cart-shopping" id="carts"></i></span>
-        </a>  
-   
- </div>
-    </div>
+    <nav class="navbar navbar-expand-lg" id="heading">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="nav-head" href="../index.html">        
+                <img class="head-img" src="../images/eunoia-high-resolution-logo-transparent (1).png" alt="">
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
+              <li class="nav-item">
+                <a class="a-tag" href="../index.html"><p>Home</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/beauty.html"> <p>Beauty</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/groceries.html"><p>Grocery</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/furniture.html"><p>Furniture</p></a>
+            </li>
+            </ul>
+    
+      </nav>
     <div class="cart-details">
         <div id="cart-products">
 
@@ -35,14 +41,40 @@
         
         </div>
         <div class="total-price-details">
-            <h4>PRICE DETAILS</h4>
-             <p>Price <span id="cart1"></span></p>
-             <p>Discount <span id="cart2"></span></p>
-             <p>  Delivery Charges <span id="cart3" style="color: green;">Free</span></p>
-             <h3>Total Amount <span id="cart4"></span></h3>
-
-        <div><span style="color: gray;">Safe and Secure Payments.Easy returns.100% Authentic products.</span> <span style="float: right;"><a href="./buy.html"><button  class="last-btn2">BUY NOW</button></a>
-        </span></div>
+            <div class="total-div">
+                
+            <table>
+                <thead>
+                    <tr >
+                        <th>PRICE DETAILS</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td id="cart1">nm</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td id="cart2">mn</td>
+                    </tr>
+                    <tr>
+                        <td> Delivery Charges</td>
+                        <td id="cart3" style="color: green;">Free</td>
+                    </tr>
+                    <tr >
+                        <td id="total-amount" >Total Amount</td>
+                        <td id="cart4"></td>
+                    </tr>
+                </tbody>
+    
+            </table>
+        <div id="save" style="color: gray;"></div>
+            </div>
+            <p class="cart-p">Safe and Secure Payments.Easy returns.100% Authentic products.</p>
+        <div style="margin-top: 20px;"><a href="./buy.html"><button  class="last-btn2">PLACE ORDER</button></a>
+        </div>
      
         </div>
         
@@ -55,7 +87,7 @@
 
 
 
-
+    <script src="../js/bootstrap.bundle.min.js.js"></script>
     <script src="../js/cart.js"></script>
 </body>
 </html>

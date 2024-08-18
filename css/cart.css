@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
 }
-.heading{
+#heading{
     background-color: rgb(10, 32, 70);
     color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: sticky; */
     position: relative;
   
   }
@@ -22,11 +23,11 @@
   }
 
   #search{
-    padding: 5px;
+    padding: 3px;
     border: none;
-    border-radius: 2px;
+    border-radius: 12px;
     margin-right: 25px;
-    width: 70%;
+    width: 25%;
   }
 
 #cart-products{
@@ -199,61 +200,54 @@
     width: 100px;
      color: white;
    }
-
-   .total-price-details{
+ 
+    .total-price-details { 
     padding: 15px;
     margin: 8px;
-    /* text-align: center; */
     box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
-    width: 20em;
-    /* width: 100%; */
-    height: 34em;
-    display: grid;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    padding: 50px;
+    width: 25em;
+    height: 36em;
+    padding: 30px;
     /* border: 1px solid black; */
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     position: sticky;
     top: 0;
     right: 0;
-    jus
-
-
-    
-   }
-   #cart2{
-    color: green;
-   }
-   
-   #cart1,
-   #cart2,#cart3,#cart4{
-    /* width: 100%; */
     /* float: right; */
-    /* border: 1px solid black; */
-    /* margin-left:1050px; */
-    font-size: 16px;
-    margin-bottom: 20px;
     
-
-    
+   }
+    .total-price-details th{
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 35px;
+    width: 100%;
+   } 
+    .total-price-details td{
+    font-size: 17px;
+    padding-bottom: 25px;
   
+ 
+   }
+   #cart1,#cart2,#cart3,#cart4{
+    float: right;
+
+
+   }
+
+   #cart2{
+    width: 100%;
+    color: green;
    }
 
    #cart4{
-    padding-bottom: 20px;
-   }
-   .total-price-details h4{
-    color: gray;
-    margin-bottom: 30px;
-
-   }
-   .total-price-details p{
-    font-size: 17px;
-   }
-   h3{
     font-size: 20px;
+    font-weight: bold;
    }
+    #total-amount{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   
    .cart-details{
     display: flex;
     /* justify-content: center; */
@@ -262,20 +256,20 @@
     
    }
 
-   .nav-items{
+   #nav-items{
     position: absolute;
     top: 15px;
     left: 10%;
     display: flex;
    }
-   .nav-items p{
+   #nav-items p{
     margin: 0 15px;
     color: rgb(255, 255, 255);
     font-size: 16px;
   
   
    }
-   .nav-items :hover{
+   #nav-items :hover{
     color: rgb(190, 171, 51);
     text-decoration: underline;
     text-decoration-color:rgb(153, 137, 32);
@@ -287,12 +281,420 @@
    }
    .last-btn2{
     border: none;
-    background-color: rgb(232, 143, 87);
-    padding: 10px 40px;
-    margin-left: 35px;
+    background-color: rgb(245, 105, 17);
+    color: white;
+    padding: 10px 30px;
+    /* margin-left: 35px; */
     border-radius: 6px;
    
    
   }
+.save{
+  color: green;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 11px;
+}
+.total-div{
+  /* border: 1px solid rgb(232, 229, 229); */
+  padding: 19px 5px;
+  box-shadow:  rgba(203, 201, 201, 0.4) 0px 2px 0px ;
 
+}
+.cart-p{
+  color: gray;
+   margin-top: 10px;
+   width: 320px;
+}
+
+
+@media (min-width:400px) and (max-width:575.98px){
+  .cart-details{
+    flex-direction: column;
+  }
+ 
+  .e-card{
+    width: 26em;
+    height: 12em;  
+ 
+  }
+   .e-card img{
+     width: 5em;
+     height: 4em;
+     
+  }
+
+     .e-doc h4{
+
+     padding-top: 2px;
+     font-size: 15px;
+   
+ 
+     }
+
+     .btn{
+      font-size: 15px;
+        padding: 3px 10px;
+        border-radius: 7px;
+       
+  
+      }
+
+      .e-doc h6{
+        font-size: 8px;
+      }
+  
+      .math{
+        font-size: 12px;
+      }
+      .price{
+        font-size: 15px;
+      }
+  
+      .discnt{
+        font-size: 15px;
+  
+      }
+      
+  
+      .icon{
+        font-size: 9px;
+        font-size: 8px;
+      
+      }
+      .pro-btn1{
+       font-size: 10px;
+        padding: 1px 3px;
+ 
+      }
+
+      #total-item{
+        width: 15%;
+      }
+
+      
+  
+     
+  .total-price{
+    width: 26em;
+    height: 12em;
+   
+  }
+  
+ 
+    .total-price-details{ 
+      
+    width: 19em;
+    height: 26em;
+   
+   
+    
+   }
+    .total-price-details th{
+    margin-bottom: 10px;
+    font-size: 15px;
+   } 
+    .total-price-details td{
+    font-size: 12px;
+    padding-bottom: 14px;
+  
+ 
+   }
+   
+
+   
+   .cart-details{
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    justify-content: center;
+    
+   }
+
+
+
+   .last-btn2{
+  
+    padding: 5px 10px;
+    /* margin-left: 35px; */
+    border-radius: 6px;
+    font-size: 10px;
+   
+   
+  }
+  .cart-p{
+     margin-top: 5px;
+     width: 220px;
+     font-size: 10px;
+  }
+.save{
+  font-size: 10px;
+
+}
+.total-div{
+  padding: 12px 3x;
+
+
+}
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+  .cart-details{
+    flex-direction: column;
+  }
+ 
+  .e-card{
+    width: 32em;
+    height: 12em;  
+ 
+  }
+   .e-card img{
+     width: 6em;
+     height: 5em;
+     
+  }
+
+     .e-doc h4{
+
+     padding-top: 5px;
+     font-size: 17px;
+   
+ 
+     }
+
+     .btn{
+      font-size: 13px;
+        padding: 3px 10px;
+        border-radius: 7px;
+       
+  
+      }
+
+      .e-doc h6{
+        font-size: 8px;
+      }
+  
+      .math{
+        font-size: 12px;
+      }
+      .price{
+        font-size: 15px;
+      }
+  
+      .discnt{
+        font-size: 15px;
+  
+      }
+      
+  
+      .icon{
+        font-size: 9px;
+        font-size: 8px;
+      
+      }
+      .pro-btn1{
+       font-size: 10px;
+        padding: 1px 3px;
+ 
+      }
+
+      #total-item{
+        width: 15%;
+      }
+
+      
+  
+     
+  .total-price{
+    width: 26em;
+    height: 12em;
+   
+  }
+  
+ 
+    .total-price-details{ 
+      
+    width: 19em;
+    height: 26em;
+   
+   
+    
+   }
+    .total-price-details th{
+    margin-bottom: 10px;
+    font-size: 15px;
+   } 
+    .total-price-details td{
+    font-size: 12px;
+    padding-bottom: 14px;
+  
+ 
+   }
+   
+
+   
+   .cart-details{
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    justify-content: center;
+    
+   }
+
+
+
+   .last-btn2{
+  
+    padding: 5px 10px;
+    /* margin-left: 35px; */
+    border-radius: 6px;
+    font-size: 10px;
+   
+   
+  }
+  .cart-p{
+     margin-top: 5px;
+     width: 220px;
+     font-size: 10px;
+  }
+.save{
+  font-size: 10px;
+
+}
+.total-div{
+  padding: 12px 3x;
+
+
+}
+        
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+
+ 
+  .e-card{
+    width: 26em;
+    height: 12em;  
+ 
+  }
+   .e-card img{
+     width: 5em;
+     height: 4em;
+     
+  }
+
+     .e-doc h4{
+
+     padding-top: 2px;
+     font-size: 15px;
+   
+ 
+     }
+
+     .btn{
+      font-size: 15px;
+        padding: 3px 10px;
+        border-radius: 7px;
+       
+  
+      }
+
+      .e-doc h6{
+        font-size: 8px;
+      }
+  
+      .math{
+        font-size: 12px;
+      }
+      .price{
+        font-size: 15px;
+      }
+  
+      .discnt{
+        font-size: 15px;
+  
+      }
+      
+  
+      .icon{
+        font-size: 9px;
+        font-size: 8px;
+      
+      }
+      .pro-btn1{
+       font-size: 10px;
+        padding: 1px 3px;
+ 
+      }
+
+      #total-item{
+        width: 15%;
+      }
+
+      
+  
+     
+  .total-price{
+    width: 26em;
+    height: 12em;
+   
+  }
+  
+ 
+    .total-price-details{ 
+      
+    width: 19em;
+    height: 26em;
+   
+   
+    
+   }
+    .total-price-details th{
+    margin-bottom: 10px;
+    font-size: 15px;
+   } 
+    .total-price-details td{
+    font-size: 12px;
+    padding-bottom: 14px;
+  
+ 
+   }
+   
+
+   
+   .cart-details{
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    justify-content: center;
+    
+   }
+
+
+
+   .last-btn2{
+  
+    padding: 5px 10px;
+    /* margin-left: 35px; */
+    border-radius: 6px;
+    font-size: 10px;
+   
+   
+  }
+  .cart-p{
+     margin-top: 5px;
+     width: 220px;
+     font-size: 10px;
+  }
+.save{
+  font-size: 10px;
+
+}
+.total-div{
+  padding: 12px 3x;
+
+
+}
+    
+}
   

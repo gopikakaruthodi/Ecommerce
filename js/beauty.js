@@ -51,3 +51,7 @@ async function getProducts(){
 }
 
 
+let items = localStorage.length
+console.log(items);
+document.getElementById("no-Item").innerHTML=items
+

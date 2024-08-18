@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="heading">
-        <a class="nav-head" href="../index.html">        
-            <img class="head-img" src="../images/eunoia-high-resolution-logo-transparent (1).png" alt="">
-        </a>
-        <div class="nav-items">
-            
-            <a class="a-tag" href="../index.html"><p>Home</p></a>
-            <a class="a-tag" href="../pages/beauty.html"> <p>Beauty</p></a>
-            <a class="a-tag" href="../pages/groceries.html"><p>Grocery</p></a>
-            <a class="a-tag" href="../pages/furniture.html"><p>Furniture</p></a>
-           
-            
-            
+    <nav class="navbar navbar-expand-lg" id="heading">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="nav-head" href="../index.html">        
+                <img class="head-img" src="../images/eunoia-high-resolution-logo-transparent (1).png" alt="">
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
+              <li class="nav-item">
+                <a class="a-tag" href="../index.html"><p>Home</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/beauty.html"> <p>Beauty</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/groceries.html"><p>Grocery</p></a>
+            </li>
+              <li class="nav-item">
+                <a class="a-tag" href="../pages/furniture.html"><p>Furniture</p></a>
+            </li>
+            </ul>
         </div>
-        <div class="search1">
-            <a onclick="checkEmpty()"><span class="child11"><i class="fa-solid fa-cart-shopping"></i></span></a>       
-        </a>       
- </div>
-    </div>
+        <a onclick="checkEmpty()"><span  id="cart-icon" class="child11"><i class="fa-solid fa-cart-shopping"></i><span id="no-Item"></span></span></a>
+          
+        </div>
+      </nav>
+
     <div id="products1"></div>
 
 
 
-    
+    <script src="../js/bootstrap.bundle.min.js.js"></script>
     <script src="../js/beauty.js"></script>
 </body>
 </html>

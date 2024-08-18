@@ -20,6 +20,9 @@ async function getProducts(){
 
     })
     document.getElementById("products").innerHTML=str
+
+    
+   
     
 
 
@@ -63,6 +66,7 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
         document.getElementById("products").innerHTML=str
     
     
+        
     
        } catch (error) {
         console.log("error");
@@ -70,6 +74,14 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
        }
 
 })
+
+
+
+
+
+let items = localStorage.length
+console.log(items);
+document.getElementById("no-Item").innerHTML=items
 
 
 function checkEmpty(){
@@ -81,5 +93,7 @@ function checkEmpty(){
 
     }
 }
+
+
 
 
